@@ -23,7 +23,7 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  test-onto-syntax:
+  pre-commit-hooks:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -34,16 +34,4 @@ jobs:
       - name: Run a script
         run: |-
           pip install pre-commit
-          pre-commit run -a validate-turtle
-  test-onto-latest:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
-        with:
-          python-version: '3.11'
-          architecture: 'x64'
-      - name: Run a script
-        run: |-
-          pip install pre-commit
-          pre-commit run -a validate-directory-versioning
+          pre-commit run --all-files --verbose
