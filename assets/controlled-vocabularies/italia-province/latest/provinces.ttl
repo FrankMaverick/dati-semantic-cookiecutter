@@ -1,4 +1,3 @@
-
 <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> , <http://www.w3.org/ns/adms#Asset> , <http://dati.gov.it/onto/dcatapit#Dataset> ;
 	<http://purl.org/dc/terms/title> "Controlled Vocabulary for Italian Provinces"@en , "Vocabolario Controllato delle Province d'Italia"@it ;
 	<http://purl.org/dc/terms/description> "Vocabolario controllato delle province d'Italia e relativo codice regione"@it , "Controlled Vocabulary for describing Italy's Provinces"@en ;
