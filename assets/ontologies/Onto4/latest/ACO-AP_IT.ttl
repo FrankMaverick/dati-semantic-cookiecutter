@@ -60,8 +60,8 @@
                                      admsapit:status "published" ;
                                      admsapit:target "Pubbliche Amministrazioni" ;
                                      admsapit:type admsapit:DomainOntology .
-									 
-									 
+
+
 #################################################################
 #    Annotation properties
 #################################################################
@@ -108,7 +108,7 @@ foaf:name rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/italia/onto/l0/controlledVocabulary
 l0:controlledVocabulary rdf:type owl:AnnotationProperty .
-									 
+
 
 #################################################################
 #    Datatypes
@@ -886,21 +886,21 @@ rpo:RegisteredResidentPerson rdf:type owl:Class ;
                                                                  dct:identifier "agid" ;
                                                                  foaf:name "Agenzia per l'Italia Digitale"@it ,
                                                                            "Italian Digital Agency"@en .
-																		   
-###  https://w3id.org/italia/data/public-organization/PCM-1RSIZZ																		   
+
+###  https://w3id.org/italia/data/public-organization/PCM-1RSIZZ
 <https://w3id.org/italia/data/public-organization/PCM-1RSIZZ> rdf:type <http://dati.gov.it/onto/dcatapit#Agent> ,
 	  foaf:Agent ;
       dct:identifier "PCM-1RSIZZ" ;
       foaf:name "Dipartimento per la Trasformazione Digitale della Presidenza del Consiglio dei Ministri"@it,
 	  "Digital Transformation Department of the Presidency of the Council of Ministers"@en .
-	  
+
 ##https://w3id.org/italia/data/public-organization/m_it
 <https://w3id.org/italia/data/public-organization/m_it> rdf:type <http://dati.gov.it/onto/dcatapit#Agent> ,
 	  foaf:Agent ;
       dct:identifier "m_it" ;
       foaf:name "Ministero dell'Interno - DAIT Direzione Centrale dei servizi demografici"@it,
 	  "Ministry of the Interior - DAIT Central Directorate of Population Services"@en .
-	  
+
 
 ###  https://w3id.org/italia/data/contact-point/ISTAT-NDC
 <https://w3id.org/italia/data/contact-point/ISTAT-NDC> rdf:type <http://dati.gov.it/onto/dcatapit#Organization> ,

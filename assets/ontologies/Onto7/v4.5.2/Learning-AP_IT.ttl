@@ -44,7 +44,7 @@ At the moment, the ontology does not model information about a student's Erasmus
                                          owl:versionInfo "Version 0.2 -  Introduction of some concepts such as Profession, QualificationLevel, credit. Better specification of the relations between learning and how this brings to the qualification."@en ,
                                                          "Versione 0.2 - Introduzione di nuovi concetti come la Professione, il livello della Qualifica (EQF e/o NQF), i crediti. Un miglior dettaglio nella modellazione che dagli insegnamenti consente di arrivare alla specifica della qualifica ottenuta."@it ;
                                          <http://www.w3.org/ns/dcat#contactPoint> <https://w3id.org/italia/data/contact-point/stat-off-mur> ;
-                                         < "AFAM"@it ,
+                                         <http://www.w3.org/ns/dcat#keyword> "AFAM"@it ,
                                                                              "alta formazione"@it ,
                                                                              "formazione"@it ,
                                                                              "iscrizione"@it ,

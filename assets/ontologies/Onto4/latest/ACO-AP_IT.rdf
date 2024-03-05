@@ -55,10 +55,10 @@
         <ADMS:target>Pubbliche Amministrazioni</ADMS:target>
         <ADMS:type rdf:resource="https://w3id.org/italia/onto/ADMS/DomainOntology"/>
     </owl:Ontology>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -66,76 +66,76 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://purl.org/dc/terms/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/format -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/format"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/identifier -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
-    
+
 
 
     <!-- http://www.w3.org/2006/vcard/ns#fn -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#fn"/>
-    
+
 
 
     <!-- http://www.w3.org/2006/vcard/ns#hasEmail -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#hasEmail"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#accessURL -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#accessURL"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#downloadURL -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#downloadURL"/>
-    
+
 
 
     <!-- http://xmlns.com/foaf/0.1/name -->
 
     <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/l0/controlledVocabulary -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/l0/controlledVocabulary"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Datatypes
@@ -143,28 +143,28 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://www.w3.org/2001/XMLSchema#dateTime -->
 
     <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    
+
 
 
     <!-- http://www.w3.org/2001/XMLSchema#integer -->
 
     <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#integer"/>
-    
+
 
 
     <!-- http://www.w3.org/2001/XMLSchema#string -->
 
     <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -172,7 +172,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/attests -->
@@ -183,7 +183,7 @@
         <rdfs:label xml:lang="it">attesta</rdfs:label>
         <rdfs:label xml:lang="en">attests</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/attestsBirth -->
@@ -197,7 +197,7 @@
         <rdfs:label xml:lang="it">attesta nascita</rdfs:label>
         <rdfs:label xml:lang="en">attests birth</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/certificateIssuedForApplication -->
@@ -211,7 +211,7 @@
         <rdfs:label xml:lang="en">certificate issued for application</rdfs:label>
         <rdfs:label xml:lang="it">certificato per richiesta</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/certifies -->
@@ -222,7 +222,7 @@
         <rdfs:label xml:lang="it">certifica</rdfs:label>
         <rdfs:label xml:lang="en">certifies</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/certifiesResidence -->
@@ -236,7 +236,7 @@
         <rdfs:label xml:lang="it">certifica residenza</rdfs:label>
         <rdfs:label xml:lang="en">certifies residence</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/deedRegisteredIn -->
@@ -248,7 +248,7 @@
         <rdfs:label xml:lang="it">atto registratoIn</rdfs:label>
         <rdfs:label xml:lang="en">deed registered in</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/depositedIn -->
@@ -261,7 +261,7 @@
         <rdfs:label xml:lang="it">depositato presso</rdfs:label>
         <rdfs:label xml:lang="en">deposited in</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/hasBirth -->
@@ -275,7 +275,7 @@
         <rdfs:label xml:lang="it">haNascita</rdfs:label>
         <rdfs:label xml:lang="en">has birth</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/issuedBy -->
@@ -293,7 +293,7 @@
         <rdfs:comment xml:lang="it">Relazione tra atto amministrativo o un certificato e amministrazione pubblica.</rdfs:comment>
         <rdfs:label xml:lang="it">issued by</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/issuedWithSecretarialFees -->
@@ -306,7 +306,7 @@
         <rdfs:label xml:lang="en">issued with secretarial fees</rdfs:label>
         <rdfs:label xml:lang="it">rilasciato con diritti di segreteria</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/issuedWithStampDuty -->
@@ -319,7 +319,7 @@
         <rdfs:label xml:lang="en">issued with stamp duty</rdfs:label>
         <rdfs:label xml:lang="it">rilasciato con imposta di bollo</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/placeOfRegistryEntryForBirth -->
@@ -332,7 +332,7 @@
         <rdfs:label xml:lang="it">luogo di iscrizione anagrafica per nascita</rdfs:label>
         <rdfs:label xml:lang="en">place of registry entry for birth</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/playsRole -->
@@ -352,7 +352,7 @@
         <rdfs:label xml:lang="en">plays role</rdfs:label>
         <rdfs:label xml:lang="it">ricopre ruolo</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/providesEvidence -->
@@ -363,7 +363,7 @@
         <rdfs:label xml:lang="it">fornisceEvidenza</rdfs:label>
         <rdfs:label xml:lang="en">provides evidence</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/referencesBirthDeed -->
@@ -377,7 +377,7 @@
         <rdfs:label xml:lang="it">fa riferimento ad atto di nascita</rdfs:label>
         <rdfs:label xml:lang="en">references birth deed</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/referencesDeed -->
@@ -389,7 +389,7 @@
         <rdfs:label xml:lang="it">cita atto</rdfs:label>
         <rdfs:label xml:lang="en">references deed</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/residenceInAddress -->
@@ -401,7 +401,7 @@
         <rdfs:label xml:lang="en">residence in address</rdfs:label>
         <rdfs:label xml:lang="it">residenza in indirizzo</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/residenceInCity -->
@@ -413,7 +413,7 @@
         <rdfs:label xml:lang="en">residence in city</rdfs:label>
         <rdfs:label xml:lang="it">residenza in comune</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/roleRelativeToApplication -->
@@ -426,7 +426,7 @@
         <rdfs:label xml:lang="it">rispetto a richiesta</rdfs:label>
         <rdfs:label xml:lang="en">role relative to application</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/RPO/currentlyHasRegisteredResidenceIn -->
@@ -436,7 +436,7 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/onto/RPO/RegisteredResidence"/>
         <rdfs:label xml:lang="it">currentlyHasRegisteredResidenceIn</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/RPO/hasRegisteredResidence -->
@@ -446,10 +446,10 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CPV/Person"/>
         <rdfs:range rdf:resource="https://w3id.org/italia/onto/RPO/RegisteredResidence"/>
     </owl:ObjectProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Data properties
@@ -457,7 +457,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/ANPRProtocol -->
@@ -470,7 +470,7 @@
         <rdfs:label xml:lang="en">ANPR protocol</rdfs:label>
         <rdfs:label xml:lang="it">protocollo ANPR</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/dateOfRegistryEntryForBirth -->
@@ -483,7 +483,7 @@
         <rdfs:label xml:lang="it">data di iscrizione anagrafica per nascita</rdfs:label>
         <rdfs:label xml:lang="en">dateo of registry entry for birth</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/deedNumber -->
@@ -496,7 +496,7 @@
         <rdfs:label xml:lang="en">deed number</rdfs:label>
         <rdfs:label xml:lang="it">numero atto</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/deedTitle -->
@@ -509,7 +509,7 @@
         <rdfs:label xml:lang="en">deed title</rdfs:label>
         <rdfs:label xml:lang="it">titolo atto</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/deedYear -->
@@ -522,7 +522,7 @@
         <rdfs:label xml:lang="it">anno atto</rdfs:label>
         <rdfs:label xml:lang="en">deed year</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/expiryDate -->
@@ -535,7 +535,7 @@
         <rdfs:label xml:lang="it">data di scadenza</rdfs:label>
         <rdfs:label xml:lang="en">expiry date</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/issueDate -->
@@ -548,7 +548,7 @@
         <rdfs:label xml:lang="it">data di emissione</rdfs:label>
         <rdfs:label xml:lang="en">issue date</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/outcome -->
@@ -561,7 +561,7 @@
         <rdfs:label xml:lang="it">esito</rdfs:label>
         <rdfs:label xml:lang="en">outcome</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/outcomeMotivation -->
@@ -574,7 +574,7 @@
         <rdfs:label xml:lang="it">motivazione esito</rdfs:label>
         <rdfs:label xml:lang="en">outcome motivation</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/roleType -->
@@ -587,7 +587,7 @@
         <rdfs:label xml:lang="en">role type</rdfs:label>
         <rdfs:label xml:lang="it">tipo ruolo</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/typeOfUse -->
@@ -600,7 +600,7 @@
         <rdfs:label xml:lang="it">tipologia utilizzo</rdfs:label>
         <rdfs:label xml:lang="en">type of use</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/CPV/codiceFiscale -->
@@ -608,7 +608,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/CPV/codiceFiscale">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/CPV/dateOfBirth -->
@@ -616,7 +616,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/CPV/dateOfBirth">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/CPV/familyName -->
@@ -624,16 +624,16 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/CPV/familyName">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/CPV/givenName -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/CPV/givenName"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -641,7 +641,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/AdministrativeDeed -->
@@ -681,7 +681,7 @@
         <rdfs:label xml:lang="en">Administrative deed</rdfs:label>
         <rdfs:label xml:lang="it">Atto amministrativo</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/Applicant -->
@@ -692,7 +692,7 @@
         <rdfs:label xml:lang="en">Applicant</rdfs:label>
         <rdfs:label xml:lang="it">Richiedente</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/ApplicationSubject -->
@@ -702,7 +702,7 @@
         <rdfs:label xml:lang="en">Application subject</rdfs:label>
         <rdfs:label xml:lang="it">Interessato</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/BirthCertificate -->
@@ -719,7 +719,7 @@
         <rdfs:label xml:lang="en">Birth certificate</rdfs:label>
         <rdfs:label xml:lang="it">Certificato  anagrafico di  nascita</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/BirthDeed -->
@@ -736,7 +736,7 @@
             </owl:Restriction>
         </owl:equivalentClass>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/Certificate -->
@@ -776,7 +776,7 @@
         <rdfs:label xml:lang="en">Certificate</rdfs:label>
         <rdfs:label xml:lang="it">Certificato</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/CertificateApplication -->
@@ -802,7 +802,7 @@
         <rdfs:label xml:lang="en">Certificate application</rdfs:label>
         <rdfs:label xml:lang="it">Richiesta di  certificato</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/CertificateExemptFromSecretarialFees -->
@@ -813,7 +813,7 @@
         <rdfs:label xml:lang="en">Certificate exempt from secretarial fees</rdfs:label>
         <rdfs:label xml:lang="it">Certificato esente  da diritti di segreteria</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/CertificateExemptFromStampDuty -->
@@ -824,7 +824,7 @@
         <rdfs:label xml:lang="en">Certificate exempt from stamp duty</rdfs:label>
         <rdfs:label xml:lang="it">Certificato esente  da imposta di bollo</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/CertificateOfFamilyStatus -->
@@ -834,7 +834,7 @@
         <rdfs:label xml:lang="en">Certificate of family status</rdfs:label>
         <rdfs:label xml:lang="it">Certificato di  stato di famiglia</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/CitizenshipCertificate -->
@@ -844,7 +844,7 @@
         <rdfs:label xml:lang="it">Certificato di  cittadinanza</rdfs:label>
         <rdfs:label xml:lang="en">Citizenship certificate</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/CitizenshipDeed -->
@@ -854,7 +854,7 @@
         <rdfs:label xml:lang="it">Atto di cittadinanza</rdfs:label>
         <rdfs:label xml:lang="en">Citizenship deed</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/CivilUnionDeed -->
@@ -864,7 +864,7 @@
         <rdfs:label xml:lang="it">Atto di unione civile</rdfs:label>
         <rdfs:label xml:lang="en">Civil union deed</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/DeathDeed -->
@@ -874,7 +874,7 @@
         <rdfs:label xml:lang="it">Atto di morte</rdfs:label>
         <rdfs:label xml:lang="en">Death deed</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/DivorceDeed -->
@@ -884,7 +884,7 @@
         <rdfs:label xml:lang="it">Atto di divorzio </rdfs:label>
         <rdfs:label xml:lang="en">Divorce deed</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/Evidence -->
@@ -904,7 +904,7 @@
         <rdfs:label xml:lang="en">Evidence</rdfs:label>
         <rdfs:label xml:lang="it">Evidenza</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/EvidenceOfBirthCertificate -->
@@ -913,7 +913,7 @@
         <rdfs:label xml:lang="en">Evidence of birth certificate</rdfs:label>
         <rdfs:label xml:lang="it">Evidenza di  certificato anagrafico  di nascita</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/EvidenceOfResidenceCertificate -->
@@ -922,7 +922,7 @@
         <rdfs:label xml:lang="en">Evidence of residence certificate</rdfs:label>
         <rdfs:label xml:lang="it">Evidenza di  certificato anagrafico  di residenza</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/MaritalStatusCertificate -->
@@ -932,7 +932,7 @@
         <rdfs:label xml:lang="it">Certificato di  stato civile</rdfs:label>
         <rdfs:label xml:lang="en">Marital status certificate</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/MaritalStatusDeed -->
@@ -956,7 +956,7 @@
         <rdfs:label xml:lang="it">Atto dello stato civile</rdfs:label>
         <rdfs:label xml:lang="en">Marital status deed</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/MarriageDeed -->
@@ -966,7 +966,7 @@
         <rdfs:label xml:lang="it">Atto di matrimonio</rdfs:label>
         <rdfs:label xml:lang="en">Marriage deed</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/RegistrationCertificate -->
@@ -992,7 +992,7 @@
         <rdfs:label xml:lang="it">Certificato anagrafico</rdfs:label>
         <rdfs:label xml:lang="en">Registration certificate</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/RegistryEntry -->
@@ -1003,7 +1003,7 @@
         <rdfs:label xml:lang="it">Iscrizione anagrafica</rdfs:label>
         <rdfs:label xml:lang="en">Registry entry</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/RegistryEntryForBirth -->
@@ -1052,7 +1052,7 @@
         <rdfs:label xml:lang="it">Iscrizione  anagrafica  per nascita</rdfs:label>
         <rdfs:label xml:lang="en">Registry entry for birth</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/ResidenceCertificate -->
@@ -1068,7 +1068,7 @@
         <rdfs:label xml:lang="it">Certificato  anagrafico di  residenza</rdfs:label>
         <rdfs:label xml:lang="en">Residence certificate</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/RoleInApplication -->
@@ -1095,7 +1095,7 @@
         <rdfs:label xml:lang="en">Role in application</rdfs:label>
         <rdfs:label xml:lang="it">Ruolo rispetto  a richiesta</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/SecretarialFee -->
@@ -1105,7 +1105,7 @@
         <rdfs:label xml:lang="it">Diritti di segreteria</rdfs:label>
         <rdfs:label xml:lang="en">Secretarial fees</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/SeparationDeed -->
@@ -1115,7 +1115,7 @@
         <rdfs:label xml:lang="it">Atto di separazione </rdfs:label>
         <rdfs:label xml:lang="en">Separation deed</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/StampDuty -->
@@ -1125,7 +1125,7 @@
         <rdfs:label xml:lang="it">Imposta di bollo</rdfs:label>
         <rdfs:label xml:lang="en">Stamp duty</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/CLV/Address -->
@@ -1142,7 +1142,7 @@
             </owl:Restriction>
         </owl:equivalentClass>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/CLV/AdminUnitComponent -->
@@ -1159,13 +1159,13 @@
             </owl:Restriction>
         </owl:equivalentClass>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/CLV/City -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/City"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/COV/PublicAdministration -->
@@ -1192,7 +1192,7 @@
             </owl:Restriction>
         </owl:equivalentClass>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/CPV/Alive -->
@@ -1200,7 +1200,7 @@
     <owl:Class rdf:about="https://w3id.org/italia/onto/CPV/Alive">
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CPV/Person"/>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/CPV/Person -->
@@ -1213,19 +1213,19 @@
             </owl:Restriction>
         </owl:equivalentClass>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/RO/Role -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/RO/Role"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/RPO/RegisteredResidence -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/RPO/RegisteredResidence"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/RPO/RegisteredResidentPerson -->
@@ -1233,10 +1233,10 @@
     <owl:Class rdf:about="https://w3id.org/italia/onto/RPO/RegisteredResidentPerson">
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CPV/Alive"/>
     </owl:Class>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
@@ -1244,7 +1244,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/italia/data/contact-point/ISTAT-NDC -->
@@ -1256,7 +1256,7 @@
         <ns:fn>Segreteria Tecnica Istat - Progetto PNRR National Data Catalog </ns:fn>
         <ns:hasEmail rdf:resource="mailto:ndc-segr-tec@istat.it"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/italia/data/distribution/ACOAPIT-JSON-LD -->
@@ -1272,7 +1272,7 @@
         <dcat:accessURL rdf:resource="https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/ACO/latest"/>
         <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/ACO/latest/ACO-AP_IT.jsonld"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/italia/data/distribution/ACOAPIT-RDF-TURTLE -->
@@ -1288,7 +1288,7 @@
         <dcat:accessURL rdf:resource="https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/ACO/latest"/>
         <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/ACO/latest/ACO-AP_IT.ttl"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/italia/data/distribution/ACOAPIT-RDF-XML -->
@@ -1304,7 +1304,7 @@
         <dcat:accessURL rdf:resource="https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/ACO/latest"/>
         <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/ACO/latest/ACO-AP_IT.rdf"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/italia/data/public-organization/ISTAT -->
@@ -1316,7 +1316,7 @@
         <foaf:name xml:lang="it">Istituto Nazionale di Statistica - ISTAT</foaf:name>
         <foaf:name xml:lang="en">Italian National Institute of Statistics - ISTAT</foaf:name>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/italia/data/public-organization/PCM-1RSIZZ -->
@@ -1328,7 +1328,7 @@
         <foaf:name xml:lang="en">Digital Transformation Department of the Presidency of the Council of Ministers</foaf:name>
         <foaf:name xml:lang="it">Dipartimento per la Trasformazione Digitale della Presidenza del Consiglio dei Ministri</foaf:name>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/italia/data/public-organization/agid -->
@@ -1340,7 +1340,7 @@
         <foaf:name xml:lang="it">Agenzia per l&apos;Italia Digitale</foaf:name>
         <foaf:name xml:lang="en">Italian Digital Agency</foaf:name>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/italia/data/public-organization/m_it -->
@@ -1352,7 +1352,7 @@
         <foaf:name xml:lang="it">Ministero dell&apos;Interno - DAIT Direzione Centrale dei servizi demografici</foaf:name>
         <foaf:name xml:lang="en">Ministry of the Interior - DAIT Central Directorate of Population Services</foaf:name>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ACO/BirthDeed -->
@@ -1360,7 +1360,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/italia/onto/ACO/BirthDeed">
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ACO/EvidenceOfBirthCertificate"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/CLV/Address -->
@@ -1368,7 +1368,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/italia/onto/CLV/Address">
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ACO/EvidenceOfResidenceCertificate"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/CLV/AdminUnitComponent -->
@@ -1377,7 +1377,7 @@
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ACO/EvidenceOfBirthCertificate"/>
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ACO/EvidenceOfResidenceCertificate"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/CLV/City -->
@@ -1385,7 +1385,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/italia/onto/CLV/City">
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ACO/EvidenceOfResidenceCertificate"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/CPV/codiceFiscale -->
@@ -1394,7 +1394,7 @@
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ACO/EvidenceOfBirthCertificate"/>
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ACO/EvidenceOfResidenceCertificate"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/CPV/dateOfBirth -->
@@ -1403,7 +1403,7 @@
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ACO/EvidenceOfBirthCertificate"/>
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ACO/EvidenceOfResidenceCertificate"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/CPV/familyName -->
@@ -1412,7 +1412,7 @@
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ACO/EvidenceOfBirthCertificate"/>
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ACO/EvidenceOfResidenceCertificate"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/CPV/givenName -->
@@ -1421,10 +1421,10 @@
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ACO/EvidenceOfBirthCertificate"/>
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ACO/EvidenceOfResidenceCertificate"/>
     </owl:NamedIndividual>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotations
@@ -1437,10 +1437,10 @@
         <rdfs:comment xml:lang="it">Atto dell’ufficiale di stato civile in cui viene indicato il luogo, l&apos;anno, il mese, il giorno e l&apos;ora della nascita, il sesso del bambino e il nome che gli viene dato; sono inoltre indicate le generalità, la cittadinanza, la residenza dei genitori. L’atto di nascita è disciplinato dall’art. 29 DPR 396/00 e consegue alla presentazione della dichiarazione di nascita ai sensi dell’art. 30 DPR 396/00.</rdfs:comment>
         <rdfs:label xml:lang="en">Birth deed</rdfs:label>
     </rdf:Description>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // General axioms
@@ -1554,4 +1554,3 @@
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
-
