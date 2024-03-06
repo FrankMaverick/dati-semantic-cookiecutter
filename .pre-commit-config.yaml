@@ -16,7 +16,7 @@ repos:
         args: [--allow-multiple-documents]
     -   id: check-added-large-files
         args:
-        - "--maxkb=4000"
+        - "--maxkb=200000"
 # - repo: https://github.com/myint/autoflake
 #   rev: v1.4
 #   hooks:
@@ -70,7 +70,8 @@ repos:
   #rev: c10c5879438de0d321d6591ec88ace95e042e9d2
   rev: 0b4ad4cc883a49878fdfd4539e694ae56b041e29
   hooks:
-  # - id: validate-directory-versioning   #Check that the `latest/` version directory has the same content of the directory with the latest semantic versioning.
+  #Check that the `latest/` version directory has the same content of the directory with the latest semantic versioning.
+  # - id: validate-directory-versioning
   #   files: '^assets\/schemas\/.*\.yaml'
   - id: validate-csv
     files: >-
@@ -84,3 +85,26 @@ repos:
   - id: validate-turtle
     files: >-
       ^assets\/controlled-vocabularies\/.*\.ttl
+
+
+- repo: local
+  hooks:
+    - id: check-repo-structure
+      name: Check Repository Structure
+      entry: python ./scripts/check_repo_structure.py
+      args: ["assets/controlled-vocabularies/", "assets/ontologies/", "assets/schemas/"]
+      language: system
+      files: ^assets/.*
+      pass_filenames: false
+      types: [file]
+- repo: local
+  hooks:
+    - id: check-filename-format
+      name: Check Filename Format
+      entry: python ./scripts/check_filename_format.py
+      args: ["assets/controlled-vocabularies/", "assets/ontologies/", "assets/schemas/"]
+      language: system
+      files: ^assets/.*
+      # exclude: ^assets\.shacl$
+      pass_filenames: false
+      types: [file]
