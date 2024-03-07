@@ -8,7 +8,7 @@ def check_filename_format(root_dirs):
     """
 
     pattern = r'^[\\.a-z0-9 _-]{1,64}$'
-    extensions_to_check = ['.ttl', '.rdf', '.csv']
+    extensions_to_check = ['.ttl', '.rdf', '.csv', '.yaml']
 
     for root_dir in root_dirs:
         for dirpath, dirnames, filenames in os.walk(root_dir):
