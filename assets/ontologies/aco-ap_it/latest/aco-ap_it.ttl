@@ -919,7 +919,7 @@ rpo:RegisteredResidentPerson rdf:type owl:Class ;
                                                                dct:title "Distribuzione RDF/Turtle ontologia ACO_IT "@it ,
                                                                          "RDF/Turtle distribution of ACO_IT  Ontology"@en ;
 															   dcat:accessURL <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/ACO/latest> ;
-															   dcat:downloadURL <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/ACO/latest/ACO-AP_IT.ttl> .
+															   dcat:downloadURL <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/assets/ontologies/aco-ap_it/latest/aco-ap_it.ttl> .
 
 ### https://w3id.org/italia/data/distribution/ACOAPIT-RDF-XML
 <https://w3id.org/italia/data/distribution/ACOAPIT-RDF-XML> rdf:type admsapit:SemanticAssetDistribution ;
@@ -930,7 +930,7 @@ rpo:RegisteredResidentPerson rdf:type owl:Class ;
                                                                dct:title "Distribuzione RDF/XML ontologia ACO_IT "@it ,
                                                                          "RDF/XML distribution of ACO_IT  Ontology"@en ;
                                                                dcat:accessURL <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/ACO/latest> ;
-                                                               dcat:downloadURL <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/ACO/latest/ACO-AP_IT.rdf> .
+                                                               dcat:downloadURL <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/assets/ontologies/aco-ap_it/latest/aco-ap_it.rdf> .
 
 ### https://w3id.org/italia/data/distribution/ACOAPIT-JSON-LD
 <https://w3id.org/italia/data/distribution/ACOAPIT-JSON-LD> rdf:type admsapit:SemanticAssetDistribution ;

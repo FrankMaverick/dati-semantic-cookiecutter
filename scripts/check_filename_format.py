@@ -4,7 +4,11 @@ import sys
 
 def check_filename_format(root_dirs):
     """
-    Check whether file and directory names follow the specified format.
+    Check whether file and directory names follow the specified format (pattern)
+    Args:
+        root_dirs (list): A list of root directories to be checked.
+    Returns:
+        bool: True if all file and directory names match the required format, False otherwise.
     """
 
     pattern = r'^[\\.a-z0-9 _-]{1,64}$'

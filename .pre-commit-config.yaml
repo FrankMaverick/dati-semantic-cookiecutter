@@ -85,6 +85,9 @@ repos:
   - id: validate-turtle
     files: >-
       ^assets\/controlled-vocabularies\/.*\.ttl
+  - id: validate-turtle
+    files: >-
+      ^assets\/schemas\/.*\.ttl
 
 
 - repo: local
@@ -108,3 +111,46 @@ repos:
       # exclude: ^assets\.shacl$
       pass_filenames: false
       types: [file]
+- repo: local
+  hooks:
+    - id: check-filenames-match-directories
+      name: Check Filename match Directories
+      entry: python ./scripts/check_filenames_match_directories.py
+      args: ["assets/controlled-vocabularies/", "assets/ontologies/", "assets/schemas/"]
+      language: system
+      files: ^assets/.*
+      pass_filenames: false
+      types: [file]
+- repo: local
+  hooks:
+    - id: check-supported-files
+      name: Check encoding and file suffix
+      entry: python ./scripts/check_supported_files.py
+      args: ["assets/controlled-vocabularies/", "assets/ontologies/", "assets/schemas/"]
+      language: system
+      files: ^assets/.*
+      pass_filenames: false
+      types: [file]
+- repo: local
+  hooks:
+    - id: check-versioning-pattern
+      name: Check versioning pattern
+      entry: python ./scripts/check_versioning_pattern.py
+      args: ["assets/controlled-vocabularies/", "assets/ontologies/", "assets/schemas/"]
+      language: system
+      files: ^assets/.*
+      pass_filenames: false
+      types: [file]
+
+
+- repo: local
+  hooks:
+    - id: check-urls
+      name: Check github URLs in ttl file
+      entry: python ./scripts/check_urls.py
+      args: ["assets/controlled-vocabularies/", "assets/ontologies/", "assets/schemas/"]
+      language: python
+      files: ^assets/.*
+      pass_filenames: false
+      types: [file]
+      additional_dependencies: [requests]
