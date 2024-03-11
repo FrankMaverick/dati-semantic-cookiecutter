@@ -1,12 +1,11 @@
 import os
 import re
-import sys
 import requests
 import time
 from pathlib import Path
 
 re_url = re.compile(r'[<"](https://github|https://raw.githubusercontent[^>"]*)[>"]')
-
+root_dirs = ["assets/controlled-vocabularies/", "assets/ontologies/", "assets/schemas/"]
 
 def get_urls(root_dirs):
     """
@@ -62,12 +61,15 @@ def check_local_file_exists(file_path):
     return os.path.exists(file_path)
 
 
-def test_url(root_dirs):
+def test_url():
+    print("Starting URL test...")
     errors = []
 
     for file_path, url, root_dir in get_urls(root_dirs):
+        print(f"Testing URL: {url}")
 
         ret = request_url(requests.head, url)
+        print(f"status_code: {ret}")
 
         if ret.status_code != 200:
             relative_path = extract_relative_path(url, root_dir)
@@ -81,14 +83,9 @@ def test_url(root_dirs):
                 errors.append(f"ERROR: the corresponding local file of url {url} does not exist, root_dir {root_dir} is different")
 
     if errors:
+        print("Errors found during URL test:")
         for error in errors:
             print(error)
-        return False
+        assert False, "\n".join(errors)
     else:
-        return True
-
-
-if __name__ == "__main__":
-    root_dirs = sys.argv[1:]  # Read dir args
-    if not test_url(root_dirs):
-        exit(1)
+        print("URL test completed successfully!")
