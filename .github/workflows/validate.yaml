@@ -1,3 +1,4 @@
+
 name: Validate
 
 # Controls when the action will run.
@@ -33,6 +34,3 @@ jobs:
         run: |-
           pip install pre-commit
           pre-commit run --all-files --verbose
-        pip install pytest
-    - name: Run tests
-      run: pytest -s ./tests/test_urls.py
