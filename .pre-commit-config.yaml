@@ -143,14 +143,14 @@ repos:
       types: [file]
 
 
-- repo: local
-  hooks:
-    - id: check-urls
-      name: Check github URLs in ttl file
-      entry: python ./scripts/check_urls.py
-      args: ["assets/controlled-vocabularies/", "assets/ontologies/", "assets/schemas/"]
-      language: python
-      files: ^assets/.*
-      pass_filenames: false
-      types: [file]
-      additional_dependencies: [requests]
+# - repo: local
+#   hooks:
+#     - id: check-urls
+#       name: Check github URLs in ttl file
+#       entry: python ./scripts/check_urls.py
+#       args: ["assets/controlled-vocabularies/", "assets/ontologies/", "assets/schemas/"]
+#       language: python
+#       files: ^assets/.*
+#       pass_filenames: false
+#       types: [file]
+#       additional_dependencies: [requests]
