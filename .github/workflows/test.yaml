@@ -26,4 +26,4 @@ jobs:
         pip install pytest
 
     - name: Run tests
-      run: pytest -s .\tests\test_urls.py
+      run: pytest -s ./tests/test_urls.py
