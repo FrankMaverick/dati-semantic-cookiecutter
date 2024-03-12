@@ -3,8 +3,10 @@ import re
 import requests
 import time
 from pathlib import Path
+from urllib.parse import urlparse
 
-re_url = re.compile(r'[<"](https://github|https://raw.githubusercontent[^>"]*)[>"]')
+
+re_url = re.compile(r'[<"](https://github.*|https://raw.githubusercontent[^>"]*)[>"]')
 root_dirs = ["assets/controlled-vocabularies/", "assets/ontologies/", "assets/schemas/"]
 
 def get_urls(root_dirs):
@@ -60,6 +62,23 @@ def check_local_file_exists(file_path):
     """
     return os.path.exists(file_path)
 
+def check_repository_existence(url):
+    # Extract the username and repository name from the URL
+    parsed_url = urlparse(url)
+    path_parts = parsed_url.path.split("/")
+    username = path_parts[1]
+    repository = path_parts[2]
+
+    # GET request to verify the existence of the repository
+    response = requests.get(f"https://api.github.com/repos/{username}/{repository}")
+
+    # The repo exists on Github
+    if response.status_code == 200:
+        return True
+    # The repo doesn't exist on Github
+    else:
+        return False
+
 
 def test_url():
     print("Starting URL test...")
@@ -76,14 +95,15 @@ def test_url():
 
             if relative_path:
                 local_file_exists = check_local_file_exists(relative_path)
+                github_repo_exists = check_repository_existence(url)
 
-                if not local_file_exists:
-                    errors.append(f"Error: URL {url} in file {file_path} is not accessible, and the corresponding local file does not exist.")
+                if not (local_file_exists and github_repo_exists):
+                    errors.append(f"ERROR: URL '{url}' in file '{file_path}' is not accessible, and the corresponding local file does not exist.")
             else:
-                errors.append(f"ERROR: the corresponding local file of url {url} does not exist, root_dir {root_dir} is different")
+                errors.append(f"ERROR: the corresponding local file of url '{url}' in file '{file_path}' does not exist, root_dir '{root_dir}' is different")
 
     if errors:
-        print("Errors found during URL test:")
+        print("\nErrors found during URL test:")
         for error in errors:
             print(error)
         assert False, "\n".join(errors)

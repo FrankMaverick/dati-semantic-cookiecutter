@@ -255,15 +255,6 @@ ndc:keyConcept
         dcat:downloadURL		<https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/assets/controlled-vocabularies/education-level/education-level.csv> ;
         dcat:accessURL 			<https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/assets/controlled-vocabularies/education-level> .
 
-<http://dati.gov.it/data/resource/Distribution/EducationLevel_XLSX>
-        a						dcatapit:Distribution  ;
-        dct:title				"Distribuzione XLSX grado istruzione/titoli di studio delle persone"@it , "XLSX distribution of education level controlled vocabulary"@en ;
-        dct:description	"Questa è la distribuzione XLSX del dataset Linked Open Data del vocabolario controllato sul grado di istruzione/titoli di studio delle persone"@it , "This is the distribution in XLSX of the Linked Open Dataset of the education level controlled vocabulary"@en ;
-        dct:format 		<http://publications.europa.eu/resource/authority/file-type/XLSX> ;
-        dct:license 	<https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-        dcat:downloadURL		<https://github.com/italia/daf-ontologie-vocabolari-controllati/raw/master/assets/controlled-vocabularies/education-level/education-level.xlsx> ;
-        dcat:accessURL 			<https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/assets/controlled-vocabularies/education-level> .
-
 #Definition of the controlled vocabulary
  <https://w3id.org/italia/controlled-vocabulary/classifications-for-people/education-level/NED>
  	    a  	skos:Concept , cpvapit:EducationLevel ;
