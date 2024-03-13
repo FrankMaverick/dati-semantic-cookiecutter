@@ -1,0 +1,4 @@
+# This file may be used to create an environment using:
+pytest=8.1.1
+pre-commit=3.6.0
+requests=2.31.0

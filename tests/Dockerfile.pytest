@@ -1,0 +1,7 @@
+FROM python:3.11
+RUN pip install requests==2.31.0
+RUN pip install pytest==8.1.1
+ENTRYPOINT ["pytest", "-s", "./tests/"]
+
+
+
