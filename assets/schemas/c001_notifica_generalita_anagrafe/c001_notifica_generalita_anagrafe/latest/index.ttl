@@ -72,5 +72,5 @@
 
 <https://w3id.org/italia/Schema/anagraphic_certificate/C001_notifica_generalita_anagrafe> a dcatapit:Distribution ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
-    dcat:accessURL <https://github.com/italia/ts-ontologie-vocabolari-controllati/tree/master/Assets/schemas/c001_notifica_generalita_anagrafe/c001_notifica_generalita_anagrafe/latest> ;
+    dcat:accessURL <https://github.com/istat/ts-ontologie-vocabolari-controllati/tree/main/Schema/anagraphic_certificate/notifica_generalita_anagrafe/latest> ;
     dcat:downloadURL <https://raw.githubusercontent.com/istat/ts-ontologie-vocabolari-controllati/master/assets/schemas/c001_notifica_generalita_anagrafe/c001_notifica_generalita_anagrafe/latest/c001_notifica_generalita_anagrafe.oas3.yaml> .
